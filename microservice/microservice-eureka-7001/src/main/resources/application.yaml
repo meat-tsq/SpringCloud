@@ -1,0 +1,16 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: localhost  #主机名(如果可以在配置时确定的话)(否则将从操作系统原语中猜测) Eureka服务端实例名称
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: false #指示此实例是否应向eureka服务器注册其信息以供其他人发现。在某些情况下，您不希望发现自己的实例，而只是希望发现其他实例。
+    #false表示自己就是注册中心，我的职责就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false #指示此客户端是否应从eureka服务器获取eureka注册表信息。
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/   #设置与Eureka Server交互的地址查询服务和注册服务
+    #可用区域的地图，以列出与eureka服务器通信的完全合格的url。每个值可以是一个URL或用逗号分隔的可选位置列表。
+    #通常，eureka服务器url携带协议、主机、端口、上下文和版本信息(如果有的话)。
+    #示例:http://ec2-256-156-243-129.compute-1.amazonaws.com:7001/eureka/该更改在运行时，在eurekaServiceUrlPollIntervalSeconds指定的下一个服务url刷新周期生效。
