@@ -1,0 +1,18 @@
+server:
+  port: 80001 #配置端口号
+
+#MyBatis配置
+mybatis:
+  config-location: classpath:/mybatis/mybatis_config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+spring:
+  application:
+    name: microservice-dept
+    #数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/cloudDB01?characterEncoding=UTF-8
+    username: root
+    password: 157863
