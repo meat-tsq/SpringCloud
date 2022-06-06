@@ -20,12 +20,12 @@ public class DeptController {
     }
 
     @PostMapping("/dept/add")
-    public boolean add(@RequestBody Dept dept){
+    public boolean add( Dept dept){
         return service.add(dept);
     }
 
     @DeleteMapping("/dept/delete")
-    public boolean delete(@RequestBody Integer deptno){
+    public boolean delete( Integer deptno){
         return service.del(deptno);
     }
 
