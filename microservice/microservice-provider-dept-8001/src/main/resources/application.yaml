@@ -1,5 +1,5 @@
 server:
-  port: 80001 #配置端口号
+  port: 8001 #配置端口号
 
 #MyBatis配置
 mybatis:
@@ -16,3 +16,7 @@ spring:
     url: jdbc:mysql://localhost:3306/cloudDB01?characterEncoding=UTF-8
     username: root
     password: 157863
+  cloud:
+    config:
+      discovery:
+        enabled: false

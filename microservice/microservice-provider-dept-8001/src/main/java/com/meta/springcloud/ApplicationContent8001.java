@@ -10,8 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan(value = {"com.meta.springcloud.dao"})
-public class ApplicationContent {
+public class ApplicationContent8001 {
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationContent.class,args);
+        SpringApplication.run(ApplicationContent8001.class,args);
     }
 }
