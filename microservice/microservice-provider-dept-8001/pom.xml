@@ -84,6 +84,18 @@
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
 
+        <!--将微服务Provider注册到EurekaServer中-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <!--添加监控信息actuator-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
     </dependencies>
 
 
