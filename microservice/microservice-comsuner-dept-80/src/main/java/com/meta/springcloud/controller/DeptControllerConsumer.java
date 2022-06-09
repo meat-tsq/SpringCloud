@@ -1,4 +1,4 @@
-package com.meta.controller;
+package com.meta.springcloud.controller;
 
 import com.meta.springcloud.entites.Dept;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,8 @@ import java.util.List;
 @RestController
 public class DeptControllerConsumer {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+        //private static final String REST_URL_PREFIX = "http://localhost:8001";
+         private static final String REST_URL_PREFIX = "http://MICROSERVICE-DEPT";
 
     /**
      * 使用：
