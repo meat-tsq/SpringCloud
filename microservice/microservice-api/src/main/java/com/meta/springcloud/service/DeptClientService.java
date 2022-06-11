@@ -12,7 +12,8 @@ import java.util.List;
  * @Author Tang poetry all
  * @Date 2022/6/10 9:56
  */
-@FeignClient(name = "MICROSERVICE-DEPT")
+//@FeignClient(name = "MICROSERVICE-DEPT")
+@FeignClient(name = "MICROSERVICE-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @GetMapping("/dept/list")

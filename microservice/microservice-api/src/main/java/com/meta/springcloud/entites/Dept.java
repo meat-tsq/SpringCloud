@@ -3,6 +3,7 @@ package com.meta.springcloud.entites;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import lombok.experimental.Accessors;
 
 /**
  * @Author Tang poetry all
@@ -11,11 +12,12 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @ToString
+@Accessors(chain = true)
 public class Dept {
     /**
      * 主键
      */
-    private Long 	deptno;
+    private Long deptno;
 
     /**
      * 部门名称
