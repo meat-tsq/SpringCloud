@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: microservice-config-eureka-client
+      profile: dev #本次访问的配置项
+      label: main
+      uri: http://config-3344.com:3344

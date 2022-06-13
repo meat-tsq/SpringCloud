@@ -12,13 +12,18 @@
       <module>microservice-provider-dept-8001</module>
       <module>microservice-comsuner-dept-80</module>
       <module>microservice-eureka-7001</module>
-    <module>microservice-eureka-7002</module>
-    <module>microservice-eureka-7003</module>
+      <module>microservice-eureka-7002</module>
+      <module>microservice-eureka-7003</module>
       <module>microservice-provider-dept-8002</module>
       <module>microservice-provider-dept-8003</module>
       <module>microservice-consumer-dept-feign</module>
       <module>microservice-provider-dept-hystrix-8001</module>
       <module>microservice-consumer-hystrix-dashboard</module>
+      <module>microservice-zuul-gateway-9527</module>
+      <module>microservice-config-3344</module>
+      <module>microservice-config-client-3355</module>
+      <module>microservice-config-eureka-client-7001</module>
+      <module>microservice-provider-dept-config-8001</module>
   </modules>
 
   <packaging>pom</packaging>
